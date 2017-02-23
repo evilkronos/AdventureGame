@@ -52,18 +52,20 @@ def inputDice():
 
 def inputRoll():
 
-    acceptableDice = ['d6', 'd8', 'd10', 'd20', 'd100']
-    print('Enter a dice to roll:')
-    roll = input()
+    acceptableDice = ['6', '8', '10', '20', '100']
+    print("Lets roll some dice to test the rolling. Enter a dice to roll from the following dice: 6, 8, 10, 20, 100")
+    input_roll = input()
 
-    if roll not in acceptableDice:
+    while input_roll not in acceptableDice:
      print('You need to enter one of the above mentioned dice.')
+     input_roll = input()
     else:
         print("Rolling dice.....")
         time.sleep(2)
-        str(roll_dice(int(roll)))
+        roll = (int(roll_dice(int(input_roll))))
+        print(roll)
         time.sleep(.5)
-        print("You rolled a " + str(roll_dice(int(roll))) + " congratulations on your first dice roll!")
+        print("You rolled a " + str(roll) + ", congratulations on your first dice roll!")
 
 
 
