@@ -1,42 +1,31 @@
 #from weapons import shortsword
 #from items import Armour
-import functions
+#import functions
+#import weapons
+#import items
 
 
-class ArmourClass:  #a rmourclass class for various NPC's default armourclass
+class Characters:
 
-    bandit = 13
-    thug = 14
-    soldier = 15
-    knight = 17
-
-
-class PC:  # statistics for the player controller
-
-    pcArmourClass = 15
-    pcMaxHealth = 15
-    pcWeapon = shortsword.damage
-
-# print(int(pc.pcWeapon))
+    def __init__(self, name, strength, dexterity, constitution, intelligence, wisdom, charisma, basearmourclass, baseinitiative):
+        self.name = name
+        self.strength = strength
+        self.dexterity = dexterity
+        self.constitution = constitution
+        self.intelligence = intelligence
+        self.wisdom = wisdom
+        self.charisma = charisma
+        self.baseArmourClass = basearmourclass
+        self.baseInitiative = baseinitiative
 
 
-class Bandit:
-
-    ArmourClass.bandit
-    maxHealth = 10
-    weapon = shortsword.damage
+Player1 = Characters('kronos', 1, 2, 3, 4, 5, 6, 7, 10)
 
 
-class Thug:
-
-    ArmourClass.thug
-    maxHealth = 10
-    weapon = shortsword.damage * 2
-    armour = Armour.leather
+#Find way to call/make modifiers, eg: characters.self.intelligence -+ modifier
 
 
-class Soldier:
 
-    ArmourClass.soldier
-    maxHealth = 15
-    weapon = weapons.longsword_attk
+print(Player1.intelligence)
+
+
