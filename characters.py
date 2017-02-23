@@ -1,5 +1,5 @@
-from weapons import shortsword
-from items import Armour
+#from weapons import shortsword
+#from items import Armour
 import functions
 
 

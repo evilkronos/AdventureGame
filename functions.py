@@ -1,7 +1,7 @@
 import random
-import characters
+#import characters
 import time
-import weapons
+#import weapons
 
 
 #  defines the dice rolling mechanic

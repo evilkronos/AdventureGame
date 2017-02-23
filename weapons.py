@@ -1,8 +1,3 @@
-import random
-#  import functions
-from functions import roll_dice
-
-
 class shortsword: # class for shortsword weapon
     damage = int(roll_dice(6))
 

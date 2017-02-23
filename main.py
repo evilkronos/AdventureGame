@@ -1,8 +1,10 @@
 import time
 import functions
-import items
-import characters
-import weapons
+from functions import *
+#import items
+#import characters
+#import weapons
+#from functions import roll_dice
 
 
 #print(functions.welcome)
