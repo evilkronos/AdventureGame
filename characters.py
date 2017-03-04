@@ -1,9 +1,6 @@
-#from weapons import shortsword
-#from items import Armour
-#import functions
-#import weapons
-#import items
 import math
+
+# Character class to define each character in the game.
 
 
 class Characters:
@@ -20,6 +17,8 @@ class Characters:
         self.baseArmourClass = basearmourclass
         self.baseInitiative = baseinitiative
 
+#  Class to create the modifiers passed on Character's class
+
 class Modifiers:
 
     def __init__(self, str, dex, con, int, wis, cha):
@@ -34,13 +33,6 @@ class Modifiers:
 Player1 = Characters('Rohnar VII', 3, 15, 11, 13, 9, 15, 10, 17, 1)
 Player1mod = Modifiers(str=Player1.strength,dex=Player1.dexterity,con=Player1.constitution,int=Player1.intelligence,wis=Player1.wisdom,cha=Player1.charisma)
 
-print(Player1.strength + Player1mod.str)
 
-
-#Find way to call/make modifiers, eg: characters.self.intelligence -+ modifier
-
-
-
-
-#print(Player1.strength + int(str(abilityMod)))
-
+#  Below is the print example for chracter stat and modifier
+#  print(Player1.strength, + Player1mod.str)
