@@ -1,7 +1,8 @@
 import random
-#import characters
+import characters
 import time
 #import weapons
+from characters import Player1
 
 
 #  defines the dice rolling mechanic
@@ -67,5 +68,13 @@ def inputRoll():
         time.sleep(.5)
         print("You rolled a " + str(roll) + ", congratulations on your first dice roll!")
 
+
+def classRoll():
+
+    for x in Player1:
+        roll_dice(20)
+        return(int(Player1))
+
+print(classRoll())
 
 
