@@ -1,8 +1,7 @@
 import random
 import characters
 import time
-#import weapons
-from characters import Player1
+
 
 
 #  defines the dice rolling mechanic
@@ -12,7 +11,7 @@ def roll_dice(sides):
     return random.randint(1, sides)
 
 
-welcome = print("Welcome to Dragons in a Dungeon. Text based game by Daniel Fischer")
+
 
 
 def tutorial():
@@ -69,12 +68,11 @@ def inputRoll():
         print("You rolled a " + str(roll) + ", congratulations on your first dice roll!")
 
 
-def classRoll():
-
-    for x in Player1:
-        roll_dice(20)
-        return(int(Player1))
-
-print(classRoll())
-
+#  rolls against call in main.py x=modifier, y=required ability check. Example call: ability_check(Player1mod.wis, 15)
+def ability_check(x,y):
+    roll = roll_dice(20)+x
+    if roll >= y:
+        print("You successfully perform action")
+    else:
+        print("You failed to perform action")
 
